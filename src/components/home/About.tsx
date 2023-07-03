@@ -20,7 +20,7 @@ const BorderLinearProgress = styled(LinearProgress)(({ theme }) => ({
 
 const About = () => {
   return (
-    <Box className="container my-24 mx-auto md:px-6 w-3/4" id="features">
+    <Box className="container my-24 mx-auto md:px-6 w-3/4" id="about">
       <section className="mb-32 text-center">
         <h2 className="text-4xl underline decoration-sky-600 mb-20 font-bold">
           About
