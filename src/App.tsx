@@ -9,7 +9,7 @@ import Signup from "./components/auth/Signup";
 import Footer from "./components/layout/Footer";
 import Article from "./components/article";
 import Contact from "./components/layout/Contact";
-import Newsletter from "./components/layout/Newsletter";
+// import Newsletter from "./components/layout/Newsletter";
 import Projects from "./components/projects/projects";
 import Pricing from "./components/pricing/pricing";
 
@@ -26,7 +26,7 @@ function App() {
         <Route path="/projects" Component={Projects} />
         <Route path="/pricing" Component={Pricing} />
       </Routes>
-      <Newsletter />
+      {/* <Newsletter /> */}
       <Contact />
       <Footer />
     </Router>

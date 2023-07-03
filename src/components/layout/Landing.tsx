@@ -2,7 +2,7 @@ import React from "react";
 import { Box } from "@mui/material";
 import About from "../home/About";
 import Project from "../home/Project";
-import Testimonial from "../home/Testimonial";
+import Experience from "../home/Experience";
 
 const Landing = () => {
   return (
@@ -39,7 +39,7 @@ const Landing = () => {
       </Box>
       <About />
       <Project />
-      <Testimonial />
+      <Experience />
     </section>
   );
 };
