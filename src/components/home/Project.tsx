@@ -8,6 +8,7 @@ const Content = () => {
   const [openInfo, setOpenInfo] = useState(false);
   const [openToast, setOpenToast] = useState(false);
   const [openHealth, setOpenHealth] = useState(false);
+  const [openBubble, setOpenBubble] = useState(false);
 
   return (
     <Box className="container my-24 mx-auto md:px-6" id="content">
@@ -26,7 +27,7 @@ const Content = () => {
             </Box>
           </Box>
 
-          <Box className="w-full shrink-0 grow-0 basis-auto lg:w-6/12 lg:pl-6">
+          <Box className="w-full items-center shrink-0 grow-0 basis-auto lg:w-6/12 lg:pl-6">
             <h3 className="mb-4 text-2xl font-bold">eGroup-Infocenter</h3>
             <p className="mb-6 text-base text-sky-500">
               React(TypeScript) & Node.js
@@ -69,7 +70,7 @@ const Content = () => {
           </Box>
         </Box>
 
-        <Box className="mb-16 flex flex-wrap lg:flex-row-reverse">
+        <Box className="mb-16 flex items-center flex-wrap lg:flex-row-reverse">
           <Box className="mb-6 w-full shrink-0 grow-0 basis-auto lg:mb-0 lg:w-6/12 lg:pl-6">
             <Box
               className="ripple relative overflow-hidden rounded-lg bg-cover bg-[50%] bg-no-repeat shadow-lg dark:shadow-black/20"
@@ -118,7 +119,7 @@ const Content = () => {
           </Box>
         </Box>
 
-        <Box className="flex flex-wrap">
+        <Box className="flex mb-16 items-center flex-wrap">
           <Box className="mb-6 w-full shrink-0 grow-0 basis-auto lg:mb-0 lg:w-6/12 lg:pr-6">
             <Box
               className="ripple relative overflow-hidden rounded-lg bg-cover bg-[50%] bg-no-repeat shadow-lg dark:shadow-black/20"
@@ -161,6 +162,53 @@ const Content = () => {
                 { src: "images/health/3.png" },
                 { src: "images/health/4.png" },
                 { src: "images/health/5.png" },
+              ]}
+            />
+          </Box>
+        </Box>
+
+        <Box className="mb-16 flex flex-wrap items-center lg:flex-row-reverse">
+          <Box className="mb-6 w-full shrink-0 grow-0 basis-auto lg:mb-0 lg:w-6/12 lg:pl-6">
+            <Box
+              className="ripple relative overflow-hidden rounded-lg bg-cover bg-[50%] bg-no-repeat shadow-lg dark:shadow-black/20"
+              data-te-ripple-init
+              data-te-ripple-color="light"
+            >
+              <img src="images/bubble/1.png" className="w-full" alt="bubble" />
+            </Box>
+          </Box>
+
+          <Box className="w-full shrink-0 grow-0 basis-auto lg:w-6/12 lg:pr-6">
+            <h3 className="mb-4 text-2xl font-bold">
+              My Bubble.io Work History
+            </h3>
+            <p className="mb-6 text-base text-sky-500">bubble.io</p>
+            <p className="mb-6 text-neutral-500 dark:text-neutral-300">
+              I made this landing page for 5 hours.
+              <br />
+              The website that I had to clone. &nbsp;&nbsp;
+              <a href="https://podly.co" className="text-sky-500">
+                https://podly.co
+              </a>
+            </p>
+
+            <button
+              type="button"
+              className="text-white ml-4 mt-10 bg-sky-500 rounded-lg hover:bg-sky-400 px-4 py-2 text-lg"
+              onClick={() => setOpenBubble(true)}
+            >
+              View More
+            </button>
+
+            <Lightbox
+              open={openBubble}
+              close={() => setOpenBubble(false)}
+              slides={[
+                { src: "images/bubble/1.png" },
+                { src: "images/bubble/2.png" },
+                { src: "images/bubble/3.png" },
+                { src: "images/bubble/4.png" },
+                { src: "images/bubble/5.png" },
               ]}
             />
           </Box>
