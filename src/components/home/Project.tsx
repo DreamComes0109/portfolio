@@ -11,7 +11,7 @@ const Content = () => {
   const [openBubble, setOpenBubble] = useState(false);
 
   return (
-    <Box className="container my-24 mx-auto md:px-6" id="content">
+    <Box className="container my-24 mx-auto md:px-6" id="project">
       <h1 className="text-4xl text-center underline decoration-sky-600 mb-20 font-bold">
         Project
       </h1>
