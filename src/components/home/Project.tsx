@@ -27,7 +27,7 @@ const Content = () => {
             </Box>
           </Box>
 
-          <Box className="w-full items-center shrink-0 grow-0 basis-auto lg:w-6/12 lg:pl-6">
+          <Box className="w-full items-center text-center md:text-left shrink-0 grow-0 basis-auto lg:w-6/12 lg:pl-6">
             <h3 className="mb-4 text-2xl font-bold">eGroup-Infocenter</h3>
             <p className="mb-6 text-base text-sky-500">
               React(TypeScript) & Node.js
@@ -81,7 +81,7 @@ const Content = () => {
             </Box>
           </Box>
 
-          <Box className="w-full shrink-0 grow-0 basis-auto lg:w-6/12 lg:pr-6">
+          <Box className="w-full shrink-0 text-center md:text-right grow-0 basis-auto lg:w-6/12 lg:pr-6">
             <h3 className="mb-4 text-2xl font-bold">Toasted Yolk</h3>
             <p className="mb-6 text-base text-sky-500">Elementor</p>
             <p className="mb-6 text-neutral-500 dark:text-neutral-300">
@@ -130,7 +130,7 @@ const Content = () => {
             </Box>
           </Box>
 
-          <Box className="w-full shrink-0 grow-0 basis-auto lg:w-6/12 lg:pl-6">
+          <Box className="w-full text-center md:text-left shrink-0 grow-0 basis-auto lg:w-6/12 lg:pl-6">
             <h3 className="mb-4 text-2xl font-bold">Affinity Care</h3>
             <p className="mb-6 text-base text-sky-500">WordPress</p>
             <p className="mb-6 text-neutral-500 dark:text-neutral-300">
@@ -178,7 +178,7 @@ const Content = () => {
             </Box>
           </Box>
 
-          <Box className="w-full shrink-0 grow-0 basis-auto lg:w-6/12 lg:pr-6">
+          <Box className="w-full text-center md:text-right grow-0 basis-auto lg:w-6/12 lg:pr-6">
             <h3 className="mb-4 text-2xl font-bold">
               My Bubble.io Work History
             </h3>
