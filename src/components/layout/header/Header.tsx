@@ -50,7 +50,7 @@ const Header = () => {
           />
         </svg>
         <p className="text-lg font-semibold font-sans hover:font-serif">
-          Portfolio
+          DreamComes
         </p>
       </a>
       <motion.nav
