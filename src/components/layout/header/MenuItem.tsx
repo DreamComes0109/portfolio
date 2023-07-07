@@ -4,6 +4,7 @@ import { motion } from "framer-motion";
 
 interface props {
   i: number;
+  isOpen: boolean;
 }
 
 const variants = {
@@ -222,6 +223,9 @@ export const MenuItem = (order: props) => {
   return (
     <Link to={menus[order.i].url}>
       <motion.li
+        style={{
+          display: order.isOpen ? "" : "none",
+        }}
         variants={variants}
         whileHover={{ scale: 1.1 }}
         whileTap={{ scale: 0.95 }}
