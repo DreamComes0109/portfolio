@@ -241,9 +241,9 @@ const Content = () => {
 
   return (
     <Box className="container my-24 mx-auto md:px-6" id="project">
-      <h1 className="text-4xl text-center underline decoration-sky-600 mb-20 font-bold">
+      <h2 className="text-4xl lg:text-6xl text-center text-violet-700 underline decoration-sky-600 mb-20 font-bold">
         Project
-      </h1>
+      </h2>
       <section className="mb-32">
         {projects.map((project) => (
           <Card project={project} />
