@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import { Card } from "flowbite-react";
 
 const Article = () => {
@@ -20,7 +21,7 @@ const Article = () => {
                 <p className="mb-4 text-neutral-500 dark:text-neutral-300">
                   <small>
                     Published <u>13.01.2022</u> by
-                    <a href="#!">Anna Maria Doe</a>
+                    <Link to="#!">Anna Maria Doe</Link>
                   </small>
                 </p>
                 <p className="mb-4 pb-2">
@@ -28,14 +29,14 @@ const Article = () => {
                   placerat vulputate. Ut vulputate est non quam dignissim
                   elementum. Donec a ullamcorper diam.
                 </p>
-                <a
-                  href="#!"
+                <Link
+                  to="#!"
                   data-te-ripple-init
                   data-te-ripple-color="light"
                   className="rounded-full bg-sky-500 px-6 pt-2.5 pb-2 text-xs font-medium uppercase leading-normal text-white shadow-[0_4px_9px_-4px_#3b71ca] hover:bg-sky-600 hover:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] focus:bg-sky-600 focus:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] dark:shadow-[0_4px_9px_-4px_rgba(59,113,202,0.5)] dark:hover:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.2),0_4px_18px_0_rgba(59,113,202,0.1)] dark:focus:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.2),0_4px_18px_0_rgba(59,113,202,0.1)]"
                 >
                   Read more
-                </a>
+                </Link>
               </div>
             </Card>
           </div>
@@ -50,7 +51,7 @@ const Article = () => {
                 <p className="mb-4 text-neutral-500 dark:text-neutral-300">
                   <small>
                     Published <u>12.01.2022</u> by
-                    <a href="#!">Halley Frank</a>
+                    <Link to="#!">Halley Frank</Link>
                   </small>
                 </p>
                 <p className="mb-4 pb-2">
@@ -58,14 +59,14 @@ const Article = () => {
                   diam orci, nec ornare metus semper sed. Integer volutpat
                   ornare erat sit amet rutrum.
                 </p>
-                <a
-                  href="#!"
+                <Link
+                  to="#!"
                   data-te-ripple-init
                   data-te-ripple-color="light"
                   className="rounded-full bg-sky-500 px-6 pt-2.5 pb-2 text-xs font-medium uppercase leading-normal text-white shadow-[0_4px_9px_-4px_#3b71ca] hover:bg-sky-600 hover:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] focus:bg-sky-600 focus:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] dark:shadow-[0_4px_9px_-4px_rgba(59,113,202,0.5)] dark:hover:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.2),0_4px_18px_0_rgba(59,113,202,0.1)] dark:focus:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.2),0_4px_18px_0_rgba(59,113,202,0.1)]"
                 >
                   Read more
-                </a>
+                </Link>
               </div>
             </Card>
           </div>
@@ -80,7 +81,7 @@ const Article = () => {
                 <p className="mb-4 text-neutral-500 dark:text-neutral-300">
                   <small>
                     Published <u>10.01.2022</u> by
-                    <a href="#!">Joe Svan</a>
+                    <Link to="#!">Joe Svan</Link>
                   </small>
                 </p>
                 <p className="mb-4 pb-2">
@@ -88,14 +89,14 @@ const Article = () => {
                   arcu, non vehicula nisl dui quis diam. Mauris ut risus eget
                   massa volutpat feugiat. Donec.
                 </p>
-                <a
-                  href="#!"
+                <Link
+                  to="#!"
                   data-te-ripple-init
                   data-te-ripple-color="light"
                   className="rounded-full bg-sky-500 px-6 pt-2.5 pb-2 text-xs font-medium uppercase leading-normal text-white shadow-[0_4px_9px_-4px_#3b71ca] hover:bg-sky-600 hover:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] focus:bg-sky-600 focus:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] dark:shadow-[0_4px_9px_-4px_rgba(59,113,202,0.5)] dark:hover:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.2),0_4px_18px_0_rgba(59,113,202,0.1)] dark:focus:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.2),0_4px_18px_0_rgba(59,113,202,0.1)]"
                 >
                   Read more
-                </a>
+                </Link>
               </div>
             </Card>
           </div>
@@ -110,7 +111,7 @@ const Article = () => {
                 <p className="mb-4 text-neutral-500 dark:text-neutral-300">
                   <small>
                     Published <u>10.01.2022</u> by
-                    <a href="#!">Joe Svan</a>
+                    <Link to="#!">Joe Svan</Link>
                   </small>
                 </p>
                 <p className="mb-4 pb-2">
@@ -118,14 +119,14 @@ const Article = () => {
                   placerat vulputate. Ut vulputate est non quam dignissim
                   elementum. Donec a ullamcorper diam.
                 </p>
-                <a
-                  href="#!"
+                <Link
+                  to="#!"
                   data-te-ripple-init
                   data-te-ripple-color="light"
                   className="rounded-full bg-sky-500 px-6 pt-2.5 pb-2 text-xs font-medium uppercase leading-normal text-white shadow-[0_4px_9px_-4px_#3b71ca] hover:bg-sky-600 hover:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] focus:bg-sky-600 focus:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] dark:shadow-[0_4px_9px_-4px_rgba(59,113,202,0.5)] dark:hover:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.2),0_4px_18px_0_rgba(59,113,202,0.1)] dark:focus:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.2),0_4px_18px_0_rgba(59,113,202,0.1)]"
                 >
                   Read more
-                </a>
+                </Link>
               </div>
             </Card>
           </div>
@@ -140,7 +141,7 @@ const Article = () => {
                 <p className="mb-4 text-neutral-500 dark:text-neutral-300">
                   <small>
                     Published <u>12.01.2022</u> by
-                    <a href="#!">Halley Frank</a>
+                    <Link to="#!">Halley Frank</Link>
                   </small>
                 </p>
                 <p className="mb-4 pb-2">
@@ -148,14 +149,14 @@ const Article = () => {
                   diam orci, nec ornare metus semper sed. Integer volutpat
                   ornare erat sit amet rutrum.
                 </p>
-                <a
-                  href="#!"
+                <Link
+                  to="#!"
                   data-te-ripple-init
                   data-te-ripple-color="light"
                   className="rounded-full bg-sky-500 px-6 pt-2.5 pb-2 text-xs font-medium uppercase leading-normal text-white shadow-[0_4px_9px_-4px_#3b71ca] hover:bg-sky-600 hover:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] focus:bg-sky-600 focus:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] dark:shadow-[0_4px_9px_-4px_rgba(59,113,202,0.5)] dark:hover:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.2),0_4px_18px_0_rgba(59,113,202,0.1)] dark:focus:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.2),0_4px_18px_0_rgba(59,113,202,0.1)]"
                 >
                   Read more
-                </a>
+                </Link>
               </div>
             </Card>
           </div>
@@ -170,7 +171,7 @@ const Article = () => {
                 <p className="mb-4 text-neutral-500 dark:text-neutral-300">
                   <small>
                     Published <u>13.01.2022</u> by
-                    <a href="#!">Anna Maria Doe</a>
+                    <Link to="#!">Anna Maria Doe</Link>
                   </small>
                 </p>
                 <p className="mb-4 pb-2">
@@ -178,14 +179,14 @@ const Article = () => {
                   arcu, non vehicula nisl dui quis diam. Mauris ut risus eget
                   massa volutpat feugiat.
                 </p>
-                <a
-                  href="#!"
+                <Link
+                  to="#!"
                   data-te-ripple-init
                   data-te-ripple-color="light"
                   className="rounded-full bg-sky-500 px-6 pt-2.5 pb-2 text-xs font-medium uppercase leading-normal text-white shadow-[0_4px_9px_-4px_#3b71ca] hover:bg-sky-600 hover:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] focus:bg-sky-600 focus:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] dark:shadow-[0_4px_9px_-4px_rgba(59,113,202,0.5)] dark:hover:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.2),0_4px_18px_0_rgba(59,113,202,0.1)] dark:focus:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.2),0_4px_18px_0_rgba(59,113,202,0.1)]"
                 >
                   Read more
-                </a>
+                </Link>
               </div>
             </Card>
           </div>

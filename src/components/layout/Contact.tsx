@@ -12,7 +12,7 @@ const Contact = () => {
   return (
     <section className="mb-32" id="contact">
       <div className="relative h-[300px] overflow-hidden bg-cover bg-[50%] bg-no-repeat bg-[url('https://mdbcdn.b-cdn.net/img/new/textures/full/171.jpg')]">
-        <h2 className="text-3xl mt-32 uppercase text-white text-center font-bold">
+        <h2 className="text-3xl font-serif lg:text-5xl mt-32 uppercase text-white text-center font-bold">
           Contact
         </h2>
       </div>

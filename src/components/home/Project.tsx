@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Link } from "react-router-dom";
 import { Box } from "@mui/material";
 import Lightbox from "yet-another-react-lightbox";
 import "yet-another-react-lightbox/styles.css";
@@ -78,12 +79,12 @@ const Content = () => {
           View More
         </button>
 
-        <a
-          href="https://dev.egroup-infocenter.com/"
+        <Link
+          to="https://dev.egroup-infocenter.com/"
           className="hover:text-white hover:border-sky-400 ml-4 mt-12 bg-white border-solid border-2 border-sky-500 text-sky-500 rounded-lg hover:bg-sky-400 px-4 py-2 text-lg"
         >
           Visit Website
-        </a>
+        </Link>
 
         <Lightbox
           open={openInfo}
@@ -118,12 +119,12 @@ const Content = () => {
           The url is https://thetoastedyolk.com/
         </p>
 
-        <a
-          href="https://thetoastedyolk.com/"
+        <Link
+          to="https://thetoastedyolk.com/"
           className="hover:text-white hover:border-sky-400 mr-4 mt-12 bg-white border-solid border-2 border-sky-500 text-sky-500 rounded-lg hover:bg-sky-400 px-4 py-2 text-lg"
         >
           Visit Website
-        </a>
+        </Link>
 
         <button
           type="button"
@@ -172,13 +173,13 @@ const Content = () => {
         >
           View More
         </button>
-        <a
-          href="
+        <Link
+          to="
                   https://www.affinitycaremn.com/"
           className="hover:text-white hover:border-sky-400 ml-4 mt-12 bg-white border-solid border-2 border-sky-500 text-sky-500 rounded-lg hover:bg-sky-400 px-4 py-2 text-lg"
         >
           Visit Website
-        </a>
+        </Link>
 
         <Lightbox
           open={openHealth}
@@ -211,9 +212,9 @@ const Content = () => {
           I made this landing page for 5 hours.
           <br />
           The website that I had to clone. &nbsp;&nbsp;
-          <a href="https://podly.co" className="text-sky-500">
+          <Link to="https://podly.co" className="text-sky-500">
             https://podly.co
-          </a>
+          </Link>
         </p>
 
         <button

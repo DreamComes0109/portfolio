@@ -1,4 +1,5 @@
 import * as React from "react";
+import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 
 interface props {
@@ -51,7 +52,7 @@ const menus = [
   {
     color: "#D309E1",
     name: "About",
-    url: "/#about",
+    url: "/about",
     icon: (
       <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
         <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
@@ -79,7 +80,7 @@ const menus = [
   {
     color: "#9C1AFF",
     name: "Project",
-    url: "/#project",
+    url: "/project",
     icon: (
       <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
         <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
@@ -108,7 +109,7 @@ const menus = [
   {
     color: "#7700FF",
     name: "Experience",
-    url: "/#experience",
+    url: "/experience",
     icon: (
       <svg
         version="1.1"
@@ -174,7 +175,7 @@ const menus = [
   {
     color: "#4400FF",
     name: "Contact",
-    url: "/#contact",
+    url: "/contact",
     icon: (
       <svg
         viewBox="0 0 48 48"
@@ -219,7 +220,7 @@ export const MenuItem = (order: props) => {
     color: `${menus[order.i].color}`,
   };
   return (
-    <a href={menus[order.i].url}>
+    <Link to={menus[order.i].url}>
       <motion.li
         variants={variants}
         whileHover={{ scale: 1.1 }}
@@ -235,6 +236,6 @@ export const MenuItem = (order: props) => {
           {menus[order.i].name}
         </div>
       </motion.li>
-    </a>
+    </Link>
   );
 };
