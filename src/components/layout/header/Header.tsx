@@ -1,4 +1,5 @@
 import * as React from "react";
+import { Link } from "react-router-dom";
 import { useRef } from "react";
 import { motion, sync, useCycle } from "framer-motion";
 import { useDimensions } from "./use-dimensions";
@@ -32,8 +33,8 @@ const Header = () => {
 
   return (
     <div className="header">
-      <a
-        href="/"
+      <Link
+        to="/"
         className="[&>svg]:ml-2 [&>svg]:mr-3 [&>svg]:h-6 [&>svg]:w-6 [&>svg]:lg:ml-0 text-sky-400 logo flex"
       >
         <svg
@@ -52,7 +53,7 @@ const Header = () => {
         <p className="text-lg font-semibold font-sans hover:font-serif">
           DreamComes
         </p>
-      </a>
+      </Link>
       <motion.nav
         initial={false}
         animate={isOpen ? "open" : "closed"}

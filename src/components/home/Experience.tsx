@@ -18,9 +18,9 @@ import Typography from "@mui/material/Typography";
 const Experience = () => {
   return (
     <Box className="container my-24 mx-auto md:px-6" id="experience">
-      <h1 className="text-4xl text-center underline decoration-sky-600 mb-20 font-bold">
-        My Experience
-      </h1>
+      <h2 className="text-4xl lg:text-6xl text-center text-violet-700 underline decoration-sky-600 mb-20 font-bold">
+        Experience
+      </h2>
       <Timeline position="alternate">
         <TimelineItem>
           <TimelineOppositeContent
