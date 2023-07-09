@@ -16,43 +16,9 @@ import InfoIcon from "@mui/icons-material/Info";
 import CurrencyBitcoinIcon from "@mui/icons-material/CurrencyBitcoin";
 import Typography from "@mui/material/Typography";
 
-import { useInView } from "framer-motion";
+import MotionSection from "./pages/MotionSection";
 
 const Experience = () => {
-  function Section({
-    children,
-    children1,
-  }: {
-    children: React.ReactNode;
-    children1?: React.ReactNode;
-  }) {
-    const ref = React.useRef(null);
-    const isInView = useInView(ref, { once: true });
-
-    return (
-      <Box ref={ref}>
-        <Box
-          style={{
-            transform: isInView ? "none" : "translateX(1200px)",
-            opacity: isInView ? 1 : 0,
-            transition: "all 0.9s cubic-bezier(0.17, 0.55, 0.55, 1) 0.5s",
-          }}
-        >
-          {children}
-        </Box>
-        <Box
-          style={{
-            transform: isInView ? "none" : "translateX(-1200px)",
-            opacity: isInView ? 1 : 0,
-            transition: "all 0.9s cubic-bezier(0.17, 0.55, 0.55, 1) 0.5s",
-          }}
-        >
-          {children1}
-        </Box>
-      </Box>
-    );
-  }
-
   const exp1 = (
     <TimelineItem>
       <TimelineOppositeContent
@@ -210,9 +176,9 @@ const Experience = () => {
         Experience
       </h2>
       <Timeline position="alternate">
-        <Section children={exp1} children1={exp2} />
-        <Section children={exp3} children1={exp4} />
-        <Section children={exp5} children1={exp6} />
+        <MotionSection children={exp1} children1={exp2} />
+        <MotionSection children={exp3} children1={exp4} />
+        <MotionSection children={exp5} children1={exp6} />
       </Timeline>
     </Box>
   );
