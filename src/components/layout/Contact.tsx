@@ -3,7 +3,7 @@ import { Card } from "flowbite-react";
 
 const Contact = () => {
   return (
-    <section className="mb-32" id="contact">
+    <section className="dark:bg-gray-700 pb-32" id="contact">
       <div className=" bg-no-repeat">
         <img
           src="images/contact_bg.jpg"
@@ -13,7 +13,7 @@ const Contact = () => {
       </div>
       <div className="container mx-auto px-6 md:px-12">
         <Card className="rounded-lg bg-[hsla(0,0%,100%,0.8)] px-6 pb-12 shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)] dark:bg-[hsla(0,0%,5%,0.7)] dark:shadow-black/20 md:pb-16 md:px-12 -mt-[250px] backdrop-blur-[30px]">
-          <h2 className="text-3xl py-4 md:text-5xl text-center font-bold">
+          <h2 className="text-3xl text-black dark:text-white py-4 md:text-5xl text-center font-bold">
             CONTACT ME IF YOU HAVE A PROBLEM
           </h2>
           <div className="grid grid-rows-3 gap-3 justify-center">
@@ -53,7 +53,7 @@ const Contact = () => {
                   </g>
                 </g>
               </svg>
-              <h1 className=" ml-4 text-lg">
+              <h1 className="text-black dark:text-white ml-4 text-lg">
                 Skype Name: <strong className="text-sky-500">Dream</strong>,
                 CID:
                 <strong className="text-sky-500">
@@ -101,7 +101,7 @@ const Contact = () => {
                   ></path>
                 </g>
               </svg>
-              <h1 className=" ml-4 text-lg">
+              <h1 className="text-black dark:text-white ml-4 text-lg">
                 Gmail:
                 <strong>
                   <span className="text-sky-500">dream</span>

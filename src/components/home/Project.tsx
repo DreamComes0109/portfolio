@@ -58,7 +58,9 @@ const Content = () => {
       </Box>
 
       <Box className="w-full items-center text-center md:text-left shrink-0 grow-0 basis-auto lg:w-6/12 lg:pl-6">
-        <h3 className="mb-4 text-2xl font-bold">eGroup-Infocenter</h3>
+        <h3 className="mb-4 text-2xl text-black dark:text-white font-bold">
+          eGroup-Infocenter
+        </h3>
         <p className="mb-6 text-base text-sky-500">
           React(TypeScript) & Node.js
         </p>
@@ -111,7 +113,9 @@ const Content = () => {
       </Box>
 
       <Box className="w-full shrink-0 text-center md:text-right grow-0 basis-auto lg:w-6/12 lg:pr-6">
-        <h3 className="mb-4 text-2xl font-bold">Toasted Yolk</h3>
+        <h3 className="mb-4 text-2xl text-black dark:text-white font-bold">
+          Toasted Yolk
+        </h3>
         <p className="mb-6 text-base text-sky-500">Elementor</p>
         <p className="mb-6 text-neutral-500 dark:text-neutral-300">
           I have developed and self-designed this project.
@@ -159,7 +163,9 @@ const Content = () => {
       </Box>
 
       <Box className="w-full text-center md:text-left shrink-0 grow-0 basis-auto lg:w-6/12 lg:pl-6">
-        <h3 className="mb-4 text-2xl font-bold">Affinity Care</h3>
+        <h3 className="mb-4 text-2xl text-black dark:text-white font-bold">
+          Affinity Care
+        </h3>
         <p className="mb-6 text-base text-sky-500">WordPress</p>
         <p className="mb-6 text-neutral-500 dark:text-neutral-300">
           I have developed this website in two days.
@@ -206,7 +212,9 @@ const Content = () => {
       </Box>
 
       <Box className="w-full text-center md:text-right grow-0 basis-auto lg:w-6/12 lg:pr-6">
-        <h3 className="mb-4 text-2xl font-bold">My Bubble.io Work History</h3>
+        <h3 className="mb-4 text-2xl text-black dark:text-white font-bold">
+          My Bubble.io Work History
+        </h3>
         <p className="mb-6 text-base text-sky-500">bubble.io</p>
         <p className="mb-6 text-neutral-500 dark:text-neutral-300">
           I made this landing page for 5 hours.
@@ -241,15 +249,17 @@ const Content = () => {
   ];
 
   return (
-    <Box className="container my-24 mx-auto md:px-6" id="project">
-      <h2 className="text-4xl lg:text-6xl text-center text-violet-700 underline decoration-sky-600 mb-20 font-bold">
-        Project
-      </h2>
-      <section className="mb-32">
-        {projects.map((project) => (
-          <Card project={project} />
-        ))}
-      </section>
+    <Box className="bg-gray-200 dark:bg-gray-700">
+      <Box className="container py-24 mx-auto md:px-6" id="project">
+        <h2 className="text-4xl lg:text-6xl text-center text-violet-700 underline decoration-sky-600 mb-20 font-bold">
+          Project
+        </h2>
+        <section className="mb-32">
+          {projects.map((project) => (
+            <Card project={project} />
+          ))}
+        </section>
+      </Box>
     </Box>
   );
 };
