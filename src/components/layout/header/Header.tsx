@@ -1,5 +1,5 @@
 import * as React from "react";
-import { Link } from "react-router-dom";
+import { HashLink } from "react-router-hash-link";
 import clsx from "clsx";
 import AppBar from "@mui/material/AppBar";
 import Box from "@mui/material/Box";
@@ -116,7 +116,7 @@ function Header() {
               })}
             >
               {pages.map((page) => (
-                <Link to={`/${page.toLowerCase()}`}>
+                <HashLink smooth to={`/#${page.toLowerCase()}`}>
                   <MenuItem key={page} onClick={handleCloseNavMenu}>
                     <Typography
                       textAlign="center"
@@ -125,7 +125,7 @@ function Header() {
                       {page}
                     </Typography>
                   </MenuItem>
-                </Link>
+                </HashLink>
               ))}
             </Menu>
           </Box>
@@ -156,7 +156,7 @@ function Header() {
           </Box>
           <Box sx={{ flexGrow: 1, display: { xs: "none", md: "flex" } }}>
             {pages.map((page) => (
-              <Link to={`/${page.toLowerCase()}`}>
+              <HashLink smooth to={`/#${page.toLowerCase()}`}>
                 <Button
                   key={page}
                   onClick={handleCloseNavMenu}
@@ -165,7 +165,7 @@ function Header() {
                 >
                   {page}
                 </Button>
-              </Link>
+              </HashLink>
             ))}
           </Box>
 
