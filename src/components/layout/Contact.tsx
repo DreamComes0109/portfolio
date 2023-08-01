@@ -12,17 +12,16 @@ const Contact = () => {
         />
       </div>
       <div className="container mx-auto px-6 md:px-12">
-        <Card className="rounded-lg bg-[hsla(0,0%,100%,0.8)] px-6 pb-12 shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)] dark:bg-[hsla(0,0%,5%,0.7)] dark:shadow-black/20 md:pb-16 md:px-12 -mt-[250px] backdrop-blur-[30px]">
-          <h2 className="text-3xl text-black dark:text-white py-4 md:text-5xl text-center font-bold">
+        <Card className="rounded-lg bg-[hsla(0,0%,100%,0.8)] px-6 pb-12 shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)] dark:bg-[hsla(0,0%,5%,0.7)] dark:shadow-black/20 md:pb-16 md:px-12 -mt-[56px] md:-mt-[120px] xl:-mt-[250px] backdrop-blur-[30px]">
+          <h2 className="text-xl sm:text-2xl text-black dark:text-white py-4 md:text-3xl lg:text-5xl text-center font-bold">
             CONTACT ME IF YOU HAVE A PROBLEM
           </h2>
-          <div className="grid grid-rows-3 gap-3 justify-center">
+          <div className="grid mx-auto md:grid-rows-3 gap-3 justify-center">
             <div className="flex items-center">
               <svg
                 viewBox="0 0 48 48"
                 version="1.1"
-                width={60}
-                height={60}
+                className="w-[30px] sm:w-[60px]"
                 xmlns="http://www.w3.org/2000/svg"
                 fill="#000000"
               >
@@ -53,9 +52,8 @@ const Contact = () => {
                   </g>
                 </g>
               </svg>
-              <h1 className="text-black dark:text-white ml-4 text-lg">
-                Skype Name: <strong className="text-sky-500">Dream</strong>,
-                CID:
+              <h1 className="text-black dark:text-white ml-4 hidden md:block text-base sm:text-lg">
+                <strong className="text-sky-500">Dream</strong>,
                 <strong className="text-sky-500">
                   live:.cid.4c348b3f320d9ce8
                 </strong>
@@ -66,8 +64,7 @@ const Contact = () => {
                 xmlns="http://www.w3.org/2000/svg"
                 aria-label="Gmail"
                 role="img"
-                width={60}
-                height={60}
+                className="w-[30px] sm:w-[60px]"
                 viewBox="0 0 512 512"
                 fill="#000000"
               >
@@ -101,8 +98,7 @@ const Contact = () => {
                   ></path>
                 </g>
               </svg>
-              <h1 className="text-black dark:text-white ml-4 text-lg">
-                Gmail:
+              <h1 className="text-black dark:text-white ml-4 hidden md:block text-base sm:text-lg">
                 <strong>
                   <span className="text-sky-500">dream</span>
                   <span className="text-red-500">comesup</span>
@@ -115,8 +111,7 @@ const Contact = () => {
             <div className="flex items-center">
               <svg
                 viewBox="0 0 20 20"
-                width={60}
-                height={60}
+                className="w-[30px] sm:w-[60px]"
                 version="1.1"
                 xmlns="http://www.w3.org/2000/svg"
                 fill="#000000"
@@ -157,7 +152,7 @@ const Contact = () => {
               </svg>
               <a
                 href="https://github.com/DreamComes0109"
-                className=" ml-4 text-sky-600 hover:underline text-lg"
+                className=" ml-4  text-sky-600 hover:underline hidden md:block text-base sm:text-lg"
               >
                 <strong>https://github.com/DreamComes0109</strong>
               </a>
