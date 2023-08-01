@@ -2,7 +2,9 @@ import * as React from "react";
 import { motion } from "framer-motion";
 
 interface props {
-  toggle: () => void;
+  closeToggle: () => void;
+  openToggle: () => void;
+  isOpen: boolean;
 }
 
 const Path = (props: any) => (
@@ -16,7 +18,11 @@ const Path = (props: any) => (
 );
 
 export const MenuToggle = (t: props) => (
-  <button onClick={t.toggle}>
+  <button
+    onClick={() => {
+      t.isOpen ? t.closeToggle() : t.openToggle();
+    }}
+  >
     <svg width="23" height="23" viewBox="0 0 23 23">
       <Path
         variants={{
