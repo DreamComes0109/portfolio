@@ -16,6 +16,7 @@ function App() {
       <Header />
       <Routes>
         <Route path="/" Component={Landing} />
+        <Route path="/home" Component={Landing} />
         <Route path="/about" Component={About} />
         <Route path="/project" Component={Project} />
         <Route path="/experience" Component={Experience} />

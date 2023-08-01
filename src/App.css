@@ -72,7 +72,7 @@
 }
 
 .header nav {
-  position: absolute;
+  position: fixed;
   z-index: 20;
   top: 0;
   left: 0;
@@ -81,7 +81,8 @@
 }
 
 .header .logo {
-  position: absolute;
+  position: fixed;
+  z-index: 20;
   top: 30px;
   right: 30px;
 }
