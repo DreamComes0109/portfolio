@@ -14,14 +14,11 @@ function App() {
   return (
     <Router>
       <Header />
-      <Routes>
-        <Route path="/" Component={Landing} />
-        <Route path="/home" Component={Landing} />
-        <Route path="/about" Component={About} />
-        <Route path="/project" Component={Project} />
-        <Route path="/experience" Component={Experience} />
-        <Route path="/contact" Component={Contact} />
-      </Routes>
+      <Landing />
+      <About />
+      <Project />
+      <Experience />
+      <Contact />
       <Footer />
     </Router>
   );
