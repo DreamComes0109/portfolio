@@ -88,50 +88,68 @@ const About = () => {
         Skills
       </p>
       <Box className="mt-6">
-        <p className="text-lg font-semibold">CSS</p>
+        <p className="text-lg text-black dark:text-gray-100 font-semibold">
+          CSS
+        </p>
         <BorderLinearProgress variant="determinate" value={90} />
       </Box>
       <Box className="mt-6">
-        <p className="text-lg font-semibold">Tailwind CSS</p>
+        <p className="text-lg text-black dark:text-gray-100 font-semibold">
+          Tailwind CSS
+        </p>
         <BorderLinearProgress variant="determinate" value={95} />
       </Box>
       <Box className="mt-6">
-        <p className="text-lg font-semibold">HTML</p>
+        <p className="text-lg text-black dark:text-gray-100 font-semibold">
+          HTML
+        </p>
         <BorderLinearProgress variant="determinate" value={100} />
       </Box>
       <Box className="mt-6">
-        <p className="text-lg font-semibold">
+        <p className="text-lg text-black dark:text-gray-100 font-semibold">
           React/React Native(Next.js & Vue.js)
         </p>
         <BorderLinearProgress variant="determinate" value={90} />
       </Box>
       <Box className="mt-6">
-        <p className="text-lg font-semibold">JavaScript</p>
+        <p className="text-lg text-black dark:text-gray-100 font-semibold">
+          JavaScript
+        </p>
         <BorderLinearProgress variant="determinate" value={80} />
       </Box>
       <Box className="mt-6">
-        <p className="text-lg font-semibold">TypeScript</p>
+        <p className="text-lg text-black dark:text-gray-100 font-semibold">
+          TypeScript
+        </p>
         <BorderLinearProgress variant="determinate" value={90} />
       </Box>
       <Box className="mt-6">
-        <p className="text-lg font-semibold">Node.js</p>
+        <p className="text-lg text-black dark:text-gray-100 font-semibold">
+          Node.js
+        </p>
         <BorderLinearProgress variant="determinate" value={60} />
       </Box>
       <Box className="mt-6">
-        <p className="text-lg font-semibold">Express</p>
+        <p className="text-lg text-black dark:text-gray-100 font-semibold">
+          Express
+        </p>
         <BorderLinearProgress variant="determinate" value={70} />
       </Box>
 
       <Box className="mt-6">
-        <p className="text-lg font-semibold">Laravel</p>
+        <p className="text-lg text-black dark:text-gray-100 font-semibold">
+          Laravel
+        </p>
         <BorderLinearProgress variant="determinate" value={80} />
       </Box>
       <Box className="mt-6">
-        <p className="text-lg font-semibold">Bubble.io</p>
+        <p className="text-lg text-black dark:text-gray-100 font-semibold">
+          Bubble.io
+        </p>
         <BorderLinearProgress variant="determinate" value={60} />
       </Box>
       <Box className="mt-6">
-        <p className="text-lg font-semibold">
+        <p className="text-lg text-black text-ellipsis overflow-hidden dark:text-gray-100 font-semibold">
           WordPress/Shopify/Woocommerce/ ...
         </p>
         <BorderLinearProgress variant="determinate" value={70} />
@@ -140,13 +158,15 @@ const About = () => {
   );
 
   return (
-    <Box className="container my-24 mx-auto md:px-6 w-3/4" id="about">
-      <AnimatePresence mode="wait">
-        {React.cloneElement(element, { key: location.pathname })}
-      </AnimatePresence>
-      <section className="mb-32">
-        <Section children={imgDiv} children1={skillDiv} />
-      </section>
+    <Box className="bg-gray-100 dark:bg-gray-800">
+      <Box className="container py-24 mx-auto md:px-6 w-3/4" id="about">
+        <AnimatePresence mode="wait">
+          {React.cloneElement(element, { key: location.pathname })}
+        </AnimatePresence>
+        <section className="mb-32">
+          <Section children={imgDiv} children1={skillDiv} />
+        </section>
+      </Box>
     </Box>
   );
 };

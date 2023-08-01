@@ -1,3 +1,4 @@
+import { useState, useEffect } from "react";
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
 import Box from "@mui/material/Box";
@@ -10,6 +11,19 @@ const itemVariants = {
 };
 
 const SubAbout = () => {
+  const [screenWidth, setWidth] = useState(window.innerWidth);
+
+  useEffect(() => {
+    const handleWindowResize = () => {
+      setWidth(window.innerWidth);
+    };
+
+    window.addEventListener("resize", handleWindowResize);
+
+    return () => {
+      window.removeEventListener("resize", handleWindowResize);
+    };
+  }, []);
   return (
     <section className="mb-32 text-center">
       <motion.article
@@ -28,14 +42,13 @@ const SubAbout = () => {
             About
           </h2>
         </motion.h1>
-        <Box className="grid grid-cols-2 gap-4 lg:grid-cols-4 lg:gap-x-12">
+        <Box className="grid grid-cols-2 gap-4 xl:grid-cols-4 lg:gap-x-12">
           <motion.li variants={itemVariants} className="list-none">
-            <Box className="mb-12">
+            <Box className="mb-12 bg-white p-3 lg:p-6 rounded-xl shadow-2xl dark:shadow-stone-950 dark:bg-gray-900">
               <Box className="bg-sky-600 h-fit w-fit lg:mb-0 px-4 py-2 rounded-lg mx-auto">
                 <svg
                   fill="#FFFFFF"
-                  height={100}
-                  width={100}
+                  className="w-full md:w-[100px]"
                   version="1.1"
                   id="Capa_1"
                   xmlns="http://www.w3.org/2000/svg"
@@ -63,20 +76,26 @@ const SubAbout = () => {
                   </g>
                 </svg>
               </Box>
-              <p className="text-gray-700 font-bold text-3xl mt-6">Fast</p>
-              <p className="lg:text-lg font-normal">
-                Fast load times and lag free interaction, my highest priority.
-              </p>
+              {screenWidth > 370 && (
+                <>
+                  <p className="text-gray-700 dark:text-gray-300 font-bold md:text-3xl text-xl mt-6">
+                    Fast
+                  </p>
+                  <p className="lg:text-lg dark:text-gray-100 text-black font-normal">
+                    Fast load times and lag free interaction, my highest
+                    priority.
+                  </p>
+                </>
+              )}
             </Box>
           </motion.li>
           <motion.li variants={itemVariants} className="list-none">
-            <Box className="mb-12">
+            <Box className="mb-12 bg-white p-3 lg:p-6 rounded-xl shadow-2xl dark:shadow-stone-950 dark:bg-gray-900">
               <Box className="bg-sky-600 h-fit w-fit lg:mb-0 px-4 py-3 rounded-lg mx-auto">
                 <svg
                   viewBox="0 0 48 48"
                   enable-background="new 0 0 48 48"
-                  width={90}
-                  height={90}
+                  className="w-11/12 md:w-[90px]"
                   id="Layer_3"
                   version="1.1"
                   xmlns="http://www.w3.org/2000/svg"
@@ -96,22 +115,25 @@ const SubAbout = () => {
                   </g>
                 </svg>
               </Box>
-              <p className="text-gray-700 font-bold text-3xl mt-7">
-                Responsive
-              </p>
-              <p className="lg:text-lg font-normal">
-                My layouts will work on any device, big or small.
-              </p>
+              {screenWidth > 370 && (
+                <>
+                  <p className="text-gray-700 font-bold dark:text-gray-300 md:text-3xl text-xl mt-7">
+                    Responsive
+                  </p>
+                  <p className="lg:text-lg dark:text-gray-100 text-black font-normal">
+                    My layouts will work on any device, big or small.
+                  </p>
+                </>
+              )}
             </Box>
           </motion.li>
           <motion.li variants={itemVariants} className="list-none">
-            <Box className="mb-12">
+            <Box className="mb-12 bg-white p-3 lg:p-6 rounded-xl shadow-2xl dark:shadow-stone-950 dark:bg-gray-900">
               <Box className="bg-sky-600 h-fit w-fit lg:mb-0 px-4 py-2 rounded-lg mx-auto">
                 <svg
                   viewBox="0 0 512 512"
                   xmlns="http://www.w3.org/2000/svg"
-                  width={100}
-                  height={100}
+                  className="w-full md:w-[100px]"
                   fill="#FFFFFF"
                 >
                   <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
@@ -128,20 +150,25 @@ const SubAbout = () => {
                   </g>
                 </svg>
               </Box>
-              <p className="text-gray-700 font-bold text-3xl mt-6">Dynamic</p>
-              <p className="lg:text-lg font-normal">
-                Websites don't have to be static, I love making pages come to
-                life.
-              </p>
+              {screenWidth > 370 && (
+                <>
+                  <p className="text-gray-700 font-bold dark:text-gray-300 md:text-3xl text-xl mt-6">
+                    Dynamic
+                  </p>
+                  <p className="lg:text-lg dark:text-gray-100 text-black font-normal">
+                    Websites don't have to be static, I love making pages come
+                    to life.
+                  </p>
+                </>
+              )}
             </Box>
           </motion.li>
           <motion.li variants={itemVariants} className="list-none">
-            <Box className="mb-12">
+            <Box className="mb-12 bg-white p-3 lg:p-6 rounded-xl shadow-2xl dark:shadow-stone-950 dark:bg-gray-900">
               <Box className="bg-sky-600 h-fit w-fit lg:mb-0 px-4 py-2 rounded-lg mx-auto">
                 <svg
                   fill="#FFFFFF"
-                  width={100}
-                  height={100}
+                  className="w-full md:w-[100px]"
                   viewBox="0 0 1024 1024"
                   xmlns="http://www.w3.org/2000/svg"
                 >
@@ -156,10 +183,16 @@ const SubAbout = () => {
                   </g>
                 </svg>
               </Box>
-              <p className="text-gray-700 font-bold text-3xl mt-6">Intuitive</p>
-              <p className="lg:text-lg font-normal">
-                Strong preference for easy to use, intuitive UX/UI.
-              </p>
+              {screenWidth > 370 && (
+                <>
+                  <p className="text-gray-700 font-bold dark:text-gray-300 md:text-3xl text-xl mt-6">
+                    Intuitive
+                  </p>
+                  <p className="lg:text-lg dark:text-gray-100 text-black font-normal">
+                    Strong preference for easy to use, intuitive UX/UI.
+                  </p>
+                </>
+              )}
             </Box>
           </motion.li>
         </Box>
